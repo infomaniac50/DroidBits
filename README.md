@@ -1,3 +1,8 @@
+DroidBits
+=========
+
+An app that demonstrates the randomX library from http://www.fourmilab.ch/hotbits/
+
 ### RandomX Java Library
 Implementation of a <b>randomX</b>-compliant class which obtains genuine random data from [John Walker][fourmilab]'s [HotBits][hotbits] radioactive decay random sequence generator.
 
