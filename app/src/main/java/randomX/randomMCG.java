@@ -10,7 +10,7 @@ package randomX;
  * The generation algorithm is:
  * 
  * <p>
- * <center> <em>I<sub>j+1</sub></em> = (<em>I<sub>j</sub></em> × 16807) &
+ * <center> <em>I<sub>j+1</sub></em> = (<em>I<sub>j</sub></em> &times; 16807) &amp;
  * 0x7FFFFFFF </center>
  * 
  * <p>
@@ -84,4 +84,4 @@ public class randomMCG extends randomX {
 		state = (state * 16807) & 0x7FFFFFFFL;
 		return (byte) ((state >> 11) & 0xFF);
 	}
-};
+}

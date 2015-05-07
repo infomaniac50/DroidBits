@@ -5,14 +5,14 @@ package randomX;
  * very good) <tt>rand()</tt> linear congruential generator given as an example
  * in the ANSI C specification. This is intended not for serious use, merely as
  * an illustration of a simple software-based <b>randomX</b> generator.
- * 
+ *
  * <p>
  * The generation algorithm is:
- * 
+ *
  * <p>
- * <center> <em>I<sub>j+1</sub></em> = (<em>I<sub>j</sub></em> × 1103515245 +
- * 12345) & 0x7FFFFFFF </center>
- * 
+ * <center> <em>I<sub>j+1</sub></em> = (<em>I<sub>j</sub></em> &times; 1103515245 +
+ * 12345) &amp; 0x7FFFFFFF </center>
+ *
  * <p>
  * Designed and implemented in July 1996 by <a
  * href="http://www.fourmilab.ch/">John Walker</a>.
@@ -72,4 +72,4 @@ public class randomLCG extends randomX {
 		state = (state * 1103515245L + 12345L) & 0x7FFFFFFFL;
 		return (byte) ((state >> 11) & 0xFF);
 	}
-};
+}
